@@ -1,0 +1,590 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:res="http://www.esri.com/metadata/res/" class="gr__" lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css" id="internalStyle" xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+    body {
+      font-family: "Segoe UI", Arial, Sans-serif;
+      font-size: 10pt;
+      color: #4C4C4C;
+      background-color: #FFFFFF;
+      margin: 6px, 6px, 6px, 6px;
+    }
+    h1 {
+      font-family: "Segoe UI Light", "Segoe UI", Arial, Sans-serif;
+      font-size: 14pt;
+      color: #0079C1;
+      margin: 0px 0px 8px 0px;
+    }
+    h3 {
+      font-family: "Segoe UI semibold", "Segoe UI", Arial, Sans-serif;
+      font-size: 12pt;
+      margin: 10px 0px 4px 0px;
+    }
+    span.ContentHeader {
+      font-family: "Segoe UI semibold", "Segoe UI", Arial, Sans-serif;
+      font-size: 12pt;
+    }
+    span.SubContentHeader {
+      font-family: "Segoe UI", Arial, Sans-serif;
+      font-size: 10pt;
+      color: #6D6C70;
+    }
+    span.ElementLabel {
+      font-family: "Segoe UI", Arial, Sans-serif;
+      font-size: 10pt;
+      color: #929497;
+    }
+    div {
+      margin: 0px 0px 0px 0px;
+    }
+    p {
+      margin: 0px 0px 6px 0px;
+    }
+    .center {
+      text-align: center;
+    }
+    img {
+      margin: 8px 0px 8px 0px;
+    }
+    img.summary {
+      width: 210px;
+      height: 133px;
+      margin: 8px 0px 8px 0px;
+    }
+    img.center {
+      text-align: center;
+      display: block;
+    }
+    img.gp {
+      width: auto;
+    }
+    .noThumbnail {
+      #color: rgb(70%, 70%, 70%);
+      color: #A6A8AB;
+      border-width: 1px;
+      border-style: solid;
+      #color: rgb(70%, 70%, 70%);
+      border-color: #A6A8AB;
+      padding: 3em 3em;
+      position: relative;
+      text-align: center;
+      width: 210px;
+      height: 140px;
+      margin: 8px 0px 8px 0px;
+    }
+    .noContent {
+      #color: rgb(70%, 70%, 70%);
+      color: #A6A8AB;
+    }
+    h3 a.expander:link {
+      color: #4C4C4C;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    h3 a.expander:visited {
+      color: #0079C1;
+      text-decoration: none;
+    }
+    h3 a.expander:link:hover, h3 a.expander:visited:hover {
+      color: #0079C1;
+      text-decoration: none;
+    }
+    a.expander:link {
+      color: #323232;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    a.expander:visited {
+      color: #0079C1;
+      text-decoration: none;
+    }
+    a.expander:link:hover, a.expander:visited:hover {
+      color: #0079C1;
+      text-decoration: none;
+    }
+    a:link {
+      color: #5A9359;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #5A9359;
+      text-decoration: none;
+    }
+    a:link:hover, a:visited:hover {
+      color: #257824;
+      text-decoration: underline;
+    }
+    div.hide {
+      display: none;
+      margin: 0px 0px 20px 0px;
+      color: #6D6C70;
+    }
+    div.show {
+      display: block;
+      margin: 0px 0px 20px 0px;
+    }
+    span.hide {
+      display: none;
+      font-family: Times;
+    }
+    span.show {
+      display: inline-block;
+      font-style: normal;
+      font-family: Times;
+    }
+    table {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 8px 0px;
+      border-collapse:collapse;
+      font-size: 10pt;
+    }
+    th {
+      font-family: "Segoe UI Semibold", Arial, Sans-serif;
+      color: #4C4C4C;
+      /* color: #6C6D70 for dialog/python reference heading; */
+      text-align: left;
+      vertical-align: bottom;
+      border-bottom: 1px solid #4C4C4C;
+    }
+    td {
+      text-align: left;
+      vertical-align: top;
+    }
+    td.description {
+      vertical-align: center;
+    }
+    td.gp {
+      padding: 8px 8px 8px 8px;
+      border-bottom: 1px solid #4C4C4C;
+    }
+    ul {
+      margin: 0px 0px 0px 10px;
+      padding: 0px 0px 0px 10px;
+    }
+    li {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 10px;
+    }
+    ul ul {
+      list-style-type: square;
+    }
+    pre.wrap {
+      width: 99%;
+      font-family: "Segoe UI", Arial, Sans-serif;
+      font-size: 10pt;
+      margin: 0px 0px 0px 0px;
+      white-space: pre-wrap;       /* css-3 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+    pre.wrap p {
+      padding-bottom: 1em;
+    }
+    pre.wrap li {
+      padding-bottom: 1em;
+    }
+    pre.wrap br {
+      display: block;
+    }
+    pre.gp {
+      font-family: Courier New, Courier, monospace;
+    }
+    .gpcode {
+      border: 1px dashed #ACC6D8;
+      padding: 10px;
+      background-color:#EEEEEE;
+      height: auto;
+      overflow: scroll; 
+      width: 98%;
+    }
+    .code {
+      font-family: monospace;
+    }
+
+    p.gp {
+      margin: 7px 0px 7px 0px;
+    }
+    dl {
+      margin: 0px 0px 0px 0px;
+    }
+    dt {
+      margin: 0px 0px 0px 15px;
+      clear: left;
+    }
+    dd {
+      margin: 0px 0px 0px 15px;
+      clear: left;
+    }
+  </style>
+  </head>
+  <body oncontextmenu="return true" data-gr-c-s-loaded="true">
+    <h1 xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">CHIME Model v1.1.2</h1>
+    <p xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <span class="ContentHeader">Title</span> 
+				CHIME Model v1.1.2</p>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Description</h3>
+      <p>
+        <span class="noContent">There is no description for this item.</span>
+      </p>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Usage</h3>
+      <p>
+        <span class="noContent">There is no usage for this tool.</span>
+      </p>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Syntax</h3>
+      <p>CHIME_ (in_fc, out_fc, pop_field, {known_infections}, 
+hosp_field, {doubling_time_field}, {social_dist_perc_field}, 
+{hosp_rate_perc_field}, {icu_perc_field}, {vent_perc_field}, 
+{hosp_stay_len_field}, {icu_stay_len_field}, {vent_stay_len_field}, 
+{hosp_market_share_field}, {inf_days_field}, num_days, start_date, 
+doubling_time, social_distancing_perc, hosp_rate_perc, icu_perc, 
+vent_perc, hosp_stay_len, icu_stay_len, vent_stay_len, 
+{hosp_market_share}, {inf_days}, {lic_bed_field}, {staffed_vent_field}, 
+{icu_beds_field}, {additional_fields}, {unique_id}, {out_fc2d}) <br><br></p>
+      <table>
+        <tbody><tr>
+          <th width="30%">Parameter</th>
+          <th width="50%">Explanation</th>
+          <th width="20%">Data Type</th>
+        </tr>
+        <tr>
+          <td class="gp">in_fc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Feature Layer</td>
+        </tr>
+        <tr>
+          <td class="gp">out_fc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Feature Class</td>
+        </tr>
+        <tr>
+          <td class="gp">pop_field</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">known_infections (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_field</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">doubling_time_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">social_dist_perc_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_rate_perc_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">icu_perc_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">vent_perc_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_stay_len_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">icu_stay_len_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">vent_stay_len_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_market_share_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">inf_days_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">num_days</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Long</td>
+        </tr>
+        <tr>
+          <td class="gp">start_date</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Date</td>
+        </tr>
+        <tr>
+          <td class="gp">doubling_time</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">social_distancing_perc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_rate_perc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">icu_perc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">vent_perc</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_stay_len</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">icu_stay_len</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">vent_stay_len</td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">hosp_market_share (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">inf_days (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">String</td>
+        </tr>
+        <tr>
+          <td class="gp">lic_bed_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">staffed_vent_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">icu_beds_field (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">additional_fields (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Multiple Value</td>
+        </tr>
+        <tr>
+          <td class="gp">unique_id (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Field</td>
+        </tr>
+        <tr>
+          <td class="gp">out_fc2d (Optional) </td>
+          <td class="gp" align="left">
+            <p>
+              <span class="noContent">There is no explanation for this parameter.</span>
+            </p>
+          </td>
+          <td class="gp" align="left">Feature Class</td>
+        </tr>
+      </tbody></table>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Code Samples</h3>
+      <div class="gpItemInfo">
+        <p>
+          <span class="noContent">There are no code samples for this tool.</span>
+        </p>
+      </div>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Tags</h3>
+      <p>
+        <span class="noContent">There are no tags for this item.</span>
+      </p>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Credits</h3>
+      <p>
+        <span class="noContent">There are no credits for this item.</span>
+      </p>
+    </div>
+    <div xmlns="" xmlns:esri="http://www.esri.com/metadata/" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h3>Use limitations</h3>
+      <p>
+        <span class="noContent">There are no access and use limitations for this item.</span>
+      </p>
+    </div>
+    <br>
+    <p>
+      <i>
+        <span class="noContent">You are currently using the Item 
+Description metadata style. Change your metadata style in the Options 
+dialog box to see additional metadata content.</span>
+      </i>
+    </p>
+  
+</body></html>
